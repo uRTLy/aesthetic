@@ -14,10 +14,10 @@
           "--bin=aesthetic",
           "--package=aesthetic"
         ],
-        "filter": {
-          "name": "aesthetic",
-          "kind": "bin"
-        }
+        // "filter": {
+        //   "name": "aesthetic",
+        //   "kind": "bin"
+        // }
       },
       "args": [],
       "cwd": "${workspaceFolder}"

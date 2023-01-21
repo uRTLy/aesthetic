@@ -1,22 +1,13 @@
-[package]
-name = "aesthetic"
-version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-reqwest = { version = "0.11", features = ["blocking", "json"] }
-serde = { version = "1.0.152", features = ["derive"] }
-serde_json = "1.0.91"
-
+# [[bin]]
+# path = "crates/aesthetic/src/main.rs"
 
 [workspace]
+members = ["crates/*", "crates/exchanges/bitmex", "crates/exchanges/kraken"]
+exclude = ["crates/exchanges"]
 
-members = [
-    "libs/screen",
-    "libs/renderer",
-    "libs/trading_api",
-    "libs/exchanges/kraken",
-    "libs/exchanges/bitmex"
-]
+[workspace.dependencies]
+
+[workspace.package]
+version = "0.0.1"
+authors = ["Patrick Tluszcz"]
+description = "VIM for your trading"
