@@ -2,8 +2,7 @@
 # path = "crates/aesthetic/src/main.rs"
 
 [workspace]
-members = ["crates/*", "crates/exchanges/bitmex", "crates/exchanges/kraken"]
-exclude = ["crates/exchanges"]
+members = ["crates/*", "exchanges/*"]
 
 [workspace.dependencies]
 
