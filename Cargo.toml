@@ -16,5 +16,7 @@ serde_json = "1.0.91"
 members = [
     "libs/screen",
     "libs/renderer",
-    "libs/exchanges/kraken"
+    "libs/trading_api",
+    "libs/exchanges/kraken",
+    "libs/exchanges/bitmex"
 ]
