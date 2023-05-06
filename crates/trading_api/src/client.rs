@@ -1,19 +1,21 @@
+type StaticString = &'static str;
+
 #[derive(Clone, Debug)]
 pub enum ExchangeName {
-  Kraken,
-  KrakenFutures
+    Kraken,
+    KrakenFutures,
 }
 #[derive(Clone, Debug)]
 pub struct Exchange {
-  pub name: ExchangeName,
+    pub name: ExchangeName,
 
-  pub url: &'static str,
-  pub api_url: &'static str,
+    pub url: StaticString,
+    pub api_url: StaticString,
 
-  pub public_api_url: &'static str,
-  pub private_api_url: &'static str,
+    pub public_api_url: StaticString,
+    pub private_api_url: StaticString,
 
-  pub testnet_url: Option<&'static str>,
+    pub testnet_url: Option<StaticString>,
 }
 
 // impl Clone for Exchange {

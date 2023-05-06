@@ -1,12 +1,12 @@
-# [[bin]]
-# path = "crates/aesthetic/src/main.rs"
-
 [workspace]
-members = ["crates/*", "exchanges/*"]
-
-[workspace.dependencies]
+members = ["crates/*", "integrations/*"]
 
 [workspace.package]
 version = "0.0.1"
 authors = ["Patrick Tluszcz"]
 description = "VIM for your trading"
+edition = "2021"
+
+[workspace.dependencies]
+serde = { version = "1.0.152", features = ["derive"] }
+reqwest = { version = "0.11", features = ["blocking", "json"] }

@@ -1,0 +1,12 @@
+[package]
+name = "kraken"
+version = "0.0.1"
+
+[dependencies]
+# WORKSPACE MEMBERS
+trading_api =  { path = "../../crates/trading_api" }
+
+# EXTERNAL
+serde = { workspace = true }
+reqwest = { workspace = true }
+
