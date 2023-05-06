@@ -1,14 +1,11 @@
-
-fn read_JSON(path: string) {
+fn read_JSON(path: &str) {
   // fs
 }
 
-fn write_JSON(path: string) {
-  
-}
 
 #[cfg(test)]
 mod tests {
+    use super::read_JSON;
 
     #[test]
     fn read_works() {
