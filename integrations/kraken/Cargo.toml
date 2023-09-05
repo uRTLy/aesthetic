@@ -1,13 +1,17 @@
 [package]
-name = "trading_api"
+name = "kraken"
 
 authors.workspace = true
 edition.workspace = true
 version.workspace = true
 license.workspace = true
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+# WORKSPACE 
+trading_api =  { workspace = true }
+
+# EXTERNAL
 serde = { workspace = true }
+serde_json = { workspace = true }
 reqwest = { workspace = true }
+
