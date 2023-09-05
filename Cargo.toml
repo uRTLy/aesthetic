@@ -2,11 +2,24 @@
 members = ["crates/*", "integrations/*"]
 
 [workspace.package]
+name = "aesthetic_root"
 version = "0.0.1"
 authors = ["Patrick Tluszcz"]
 description = "VIM for your trading"
 edition = "2021"
+license = "MIT"
 
 [workspace.dependencies]
+
+# local crates
+aesthetic = { path = "./crates/aesthetic" }
+trading_api = { path = "./crates/trading_api" }
+
+# integrations 
+kraken = { path = "./integrations/kraken" }
+
+# non-local crates
+serde_json = { version = "1.0" }
 serde = { version = "1.0.152", features = ["derive"] }
 reqwest = { version = "0.11", features = ["blocking", "json"] }
+

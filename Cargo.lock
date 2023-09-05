@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "Aesthetic"
+name = "aesthetic"
 version = "0.0.1"
 
 [[package]]
@@ -363,6 +363,7 @@ version = "0.0.1"
 dependencies = [
  "reqwest",
  "serde",
+ "serde_json",
  "trading_api",
 ]
 
@@ -815,7 +816,11 @@ dependencies = [
 
 [[package]]
 name = "trading_api"
-version = "0.1.0"
+version = "0.0.1"
+dependencies = [
+ "reqwest",
+ "serde",
+]
 
 [[package]]
 name = "try-lock"
